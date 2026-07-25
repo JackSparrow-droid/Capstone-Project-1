@@ -1,0 +1,426 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fafafa;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+/* Dark Theme */
+
+body.dark-mode{
+    background:#121212;
+    color:#ffffff;
+    transition:.3s;
+}
+
+body.dark-mode .navbar{
+    background:#1a1a1a !important;
+}
+
+body.dark-mode .hero{
+    background:#121212;
+}
+
+body.dark-mode .card{
+    background:#1f1f1f;
+    color:#fff;
+}
+
+body.dark-mode .bg-light{
+    background:#1f1f1f !important;
+}
+
+body.dark-mode .text-dark{
+    color:#fff !important;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p{
+    color:#fff;
+}
+
+body.dark-mode .nav-link{
+    color:#fff !important;
+}
+
+body.dark-mode .btn-outline-dark{
+    color:#fff;
+    border-color:#fff;
+}
+
+.navbar{
+    padding:18px 0;
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:30px;
+    font-weight:700;
+}
+
+.nav-link{
+    font-size:17px;
+    margin:0 8px;
+    color:#222 !important;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#dc3545 !important;
+}
+
+.btn-danger{
+    border-radius:30px;
+    padding:10px 22px;
+}
+
+.btn-outline-danger{
+    border-radius:30px;
+}
+
+/* ==========================
+HERO
+========================== */
+
+.hero{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:1.2;
+}
+
+.hero h5{
+    letter-spacing:1px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:30px;
+}
+
+.hero img{
+    animation:float 4s ease infinite;
+    border-radius: 18px;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* ==========================
+SEARCH BOX
+========================== */
+
+.input-group{
+    border-radius:40px;
+    overflow:hidden;
+}
+
+.input-group input{
+    border:none;
+    padding:18px;
+}
+
+.input-group button{
+    padding:18px 35px;
+}
+
+/* ==========================
+SECTION TITLE
+========================== */
+
+section h2{
+    font-size:40px;
+    font-weight:700;
+}
+
+/* ==========================
+CATEGORY CARD
+========================== */
+
+.card{
+    transition:.4s;
+    border-radius:18px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.15)!important;
+}
+
+.card img{
+    transition:.4s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.mx-auto{
+  height: 200px;       /* आपको जितनी हाइट चाहिए यहाँ सेट करें (e.g., 180px या 200px) */
+  object-fit: cover;   /* इससे इमेज बिना खींचे/स्ट्रेच हुए बॉक्स में परफेक्ट फिट होगी */
+  width: 130%;
+}
+
+/* ==========================
+RESTAURANT
+========================== */
+
+.card-body h4{
+    font-weight:700;
+}
+
+.card-body p{
+    margin-bottom:8px;
+}
+
+
+/* ==========================
+POPULAR FOOD
+========================== */
+
+.card h5{
+    font-weight:600;
+}
+
+/* 4. (ऑप्शनल) सभी इमेजेस का साइज एक जैसा रखने के लिए */
+.card-img-top {
+  height: 300px;         /* अपनी पसंद के अनुसार हाइट सेट करें */
+  object-fit: cover;     /* इससे इमेज स्ट्रेच या खराब नहीं होगी */
+}
+
+/* ==========================
+SPECIAL OFFER
+========================== */
+
+.bg-danger{
+    background:#e63946!important;
+}
+
+/* ==========================
+WHY CHOOSE US
+========================== */
+
+.display-4{
+    font-size:60px;
+}
+
+
+/* ==========================
+REVIEWS
+========================== */
+
+.text-warning{
+    font-size:20px;
+}
+
+/* ==========================
+NEWSLETTER
+========================== */
+
+input[type=email]{
+
+height:55px;
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+margin-top:50px;
+
+}
+
+footer h3,
+footer h4{
+
+margin-bottom:20px;
+
+}
+
+footer ul li{
+
+margin-bottom:10px;
+
+}
+
+footer i{
+
+cursor:pointer;
+transition:.3s;
+
+}
+
+footer i:hover{
+
+color:#dc3545;
+
+}
+
+/* ==========================
+BUTTON
+========================== */
+
+.btn{
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* ==========================
+IMAGES
+========================== */
+
+img{
+
+max-width:100%;
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero img{
+
+margin-top:40px;
+
+width:90%;
+
+}
+
+.navbar-nav{
+
+text-align:center;
+
+margin-top:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+section h2{
+
+font-size:30px;
+
+}
+
+.btn{
+
+width:100%;
+margin-bottom:10px;
+
+}
+
+.input-group{
+
+display:block;
+
+}
+
+.input-group input{
+
+width:100%;
+margin-bottom:10px;
+
+}
+
+.input-group button{
+
+width:100%;
+
+}
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+/* Related Food Cards */
+
+.related-card{
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.related-card:hover{
+    transform:translateY(-8px);
+}
+
+.related-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
